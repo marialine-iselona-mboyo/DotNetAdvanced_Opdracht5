@@ -44,6 +44,7 @@
             this.smallCtrlSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normalCtrlNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.largeCtrlLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InputText = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(141, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -91,7 +92,7 @@
             this.greenCtrlGToolStripMenuItem,
             this.blueCtrlBToolStripMenuItem});
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(257, 34);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.colorToolStripMenuItem.Text = "Color";
             // 
             // redCtrlRToolStripMenuItem
@@ -99,18 +100,21 @@
             this.redCtrlRToolStripMenuItem.Name = "redCtrlRToolStripMenuItem";
             this.redCtrlRToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.redCtrlRToolStripMenuItem.Text = "Red    Ctrl+R";
+            this.redCtrlRToolStripMenuItem.Click += new System.EventHandler(this.redCtrlRToolStripMenuItem_Click);
             // 
             // greenCtrlGToolStripMenuItem
             // 
             this.greenCtrlGToolStripMenuItem.Name = "greenCtrlGToolStripMenuItem";
             this.greenCtrlGToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.greenCtrlGToolStripMenuItem.Text = "Green  Ctrl+G";
+            this.greenCtrlGToolStripMenuItem.Click += new System.EventHandler(this.greenCtrlGToolStripMenuItem_Click);
             // 
             // blueCtrlBToolStripMenuItem
             // 
             this.blueCtrlBToolStripMenuItem.Name = "blueCtrlBToolStripMenuItem";
             this.blueCtrlBToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.blueCtrlBToolStripMenuItem.Text = "Blue     Ctrl+B";
+            this.blueCtrlBToolStripMenuItem.Click += new System.EventHandler(this.blueCtrlBToolStripMenuItem_Click);
             // 
             // backgroundColorToolStripMenuItem
             // 
@@ -119,7 +123,7 @@
             this.greenToolStripMenuItem,
             this.blueToolStripMenuItem});
             this.backgroundColorToolStripMenuItem.Name = "backgroundColorToolStripMenuItem";
-            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(257, 34);
+            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.backgroundColorToolStripMenuItem.Text = "Background Color";
             // 
             // redToolStripMenuItem
@@ -127,18 +131,21 @@
             this.redToolStripMenuItem.Name = "redToolStripMenuItem";
             this.redToolStripMenuItem.Size = new System.Drawing.Size(160, 34);
             this.redToolStripMenuItem.Text = "Red";
+            this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
             // greenToolStripMenuItem
             // 
             this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
             this.greenToolStripMenuItem.Size = new System.Drawing.Size(160, 34);
             this.greenToolStripMenuItem.Text = "Green";
+            this.greenToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
             // 
             // blueToolStripMenuItem
             // 
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
             this.blueToolStripMenuItem.Size = new System.Drawing.Size(160, 34);
             this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
@@ -147,30 +154,42 @@
             this.normalCtrlNToolStripMenuItem,
             this.largeCtrlLToolStripMenuItem});
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(257, 34);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.fontToolStripMenuItem.Text = "Font";
             // 
             // smallCtrlSToolStripMenuItem
             // 
             this.smallCtrlSToolStripMenuItem.Name = "smallCtrlSToolStripMenuItem";
-            this.smallCtrlSToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
+            this.smallCtrlSToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.smallCtrlSToolStripMenuItem.Text = "Small  Ctrl+S";
+            this.smallCtrlSToolStripMenuItem.Click += new System.EventHandler(this.smallCtrlSToolStripMenuItem_Click);
             // 
             // normalCtrlNToolStripMenuItem
             // 
             this.normalCtrlNToolStripMenuItem.Name = "normalCtrlNToolStripMenuItem";
-            this.normalCtrlNToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
+            this.normalCtrlNToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.normalCtrlNToolStripMenuItem.Text = "Normal  Ctrl+N";
+            this.normalCtrlNToolStripMenuItem.Click += new System.EventHandler(this.normalCtrlNToolStripMenuItem_Click);
             // 
             // largeCtrlLToolStripMenuItem
             // 
             this.largeCtrlLToolStripMenuItem.Name = "largeCtrlLToolStripMenuItem";
-            this.largeCtrlLToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
+            this.largeCtrlLToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.largeCtrlLToolStripMenuItem.Text = "Large  Ctrl+L";
+            this.largeCtrlLToolStripMenuItem.Click += new System.EventHandler(this.largeCtrlLToolStripMenuItem_Click);
+            // 
+            // InputText
+            // 
+            this.InputText.Location = new System.Drawing.Point(0, 45);
+            this.InputText.Multiline = true;
+            this.InputText.Name = "InputText";
+            this.InputText.Size = new System.Drawing.Size(1202, 575);
+            this.InputText.TabIndex = 1;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1202, 620);
+            this.Controls.Add(this.InputText);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -199,5 +218,6 @@
         private ToolStripMenuItem smallCtrlSToolStripMenuItem;
         private ToolStripMenuItem normalCtrlNToolStripMenuItem;
         private ToolStripMenuItem largeCtrlLToolStripMenuItem;
+        private TextBox InputText;
     }
 }
