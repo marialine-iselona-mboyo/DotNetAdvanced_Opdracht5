@@ -15,41 +15,33 @@ namespace Oefening1
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
             this.Close();
         }
+
+
+
 
         private void redCtrlRToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Red;
+            InputText.BackColor = Color.Red;
         }
-
 
         private void greenCtrlGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Green;
+            InputText.BackColor = Color.Green;
         }
 
         private void blueCtrlBToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Blue;
-        }
-
-        private void redToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InputText.BackColor = Color.Red;
-        }
-
-        private void greenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InputText.BackColor = Color.Green;
-        }
-
-        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             InputText.BackColor = Color.Blue;
         }
+
+
+
+
 
         private void smallCtrlSToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -68,5 +60,11 @@ namespace Oefening1
             InputText.Font = Font = new Font(InputText.Font.Name, 24,
                     InputText.Font.Style, InputText.Font.Unit);
         }
+
+
+
+
+
+
     }
 }
