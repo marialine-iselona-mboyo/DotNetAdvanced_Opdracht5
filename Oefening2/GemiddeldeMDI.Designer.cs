@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ListBoxGem = new System.Windows.Forms.ListBox();
             this.NewNumberBtn = new System.Windows.Forms.Button();
             this.GemiddeldeTB = new System.Windows.Forms.TextBox();
             this.labelGemiddelde = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBox1
+            // ListBoxGem
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(364, 229);
-            this.listBox1.TabIndex = 0;
+            this.ListBoxGem.FormattingEnabled = true;
+            this.ListBoxGem.ItemHeight = 25;
+            this.ListBoxGem.Location = new System.Drawing.Point(12, 12);
+            this.ListBoxGem.Name = "ListBoxGem";
+            this.ListBoxGem.Size = new System.Drawing.Size(364, 229);
+            this.ListBoxGem.TabIndex = 0;
             // 
             // NewNumberBtn
             // 
@@ -77,7 +77,7 @@
             this.Controls.Add(this.labelGemiddelde);
             this.Controls.Add(this.GemiddeldeTB);
             this.Controls.Add(this.NewNumberBtn);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.ListBoxGem);
             this.Name = "GemiddeldeMDI";
             this.Text = "GemiddeldeMDI";
             this.ResumeLayout(false);
@@ -87,7 +87,7 @@
 
         #endregion
 
-        private ListBox listBox1;
+        private ListBox ListBoxGem;
         private Button NewNumberBtn;
         private TextBox GemiddeldeTB;
         private Label labelGemiddelde;
