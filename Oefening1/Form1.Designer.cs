@@ -201,7 +201,7 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-    }
+        }
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
@@ -221,3 +221,4 @@
         private ToolStripMenuItem largeCtrlLToolStripMenuItem;
         private TextBox InputText;
     }
+}
