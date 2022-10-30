@@ -4,7 +4,7 @@ namespace Oefening3
     {
 
         private int x = 0;
-        private int y = 0;
+        private int y = 25;
         private int breedte = 0;
         private int hoogte = 0;
 
@@ -39,11 +39,13 @@ namespace Oefening3
                 this.Controls.RemoveAt(count);
                 count--;
             }
+
+
             teller++;
             rijTeller = 0;
             colTeller = 0;
             for (int i = 0; i < teller; i++) { 
-                colorAlphaList.Add(0);
+                colorAlphaList.Add(35);
                 colorRedList.Add(255);
                 colorGreenList.Add(128);
                 colorBlueList.Add(128);
@@ -112,6 +114,30 @@ namespace Oefening3
             {
                 rijTeller++;
                 colTeller = 0;
+            }
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            int count = teller;
+            for(int i = 0; i < teller; i++)
+            {
+                this.Controls.RemoveAt(count);
+                count--;
+            }
+
+            colTeller = 0;
+            rijTeller = 0;
+            for(int j = 0; j < teller; j++)
+            {
+                Measurements();
+                TextBox rechthoek = new TextBox();
+                rechthoek.Multiline = true;
+                rechthoek.Location = new Point(x, y);
+                rechthoek.Size = new Size(breedte, hoogte);
+                rechthoek.BackColor = Color.FromArgb(colorAlphaList[j], colorBlueList[j], colorGreenList[j], colorRedList[j]);
+                this.Controls.Add(rechthoek);
+                textBoxesList.Add(rechthoek);
             }
         }
     }

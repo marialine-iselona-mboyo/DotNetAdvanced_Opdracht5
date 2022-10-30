@@ -45,30 +45,70 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(12, 12);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(85, 31);
             this.numericUpDown1.TabIndex = 0;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             // 
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(12, 81);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(85, 31);
             this.numericUpDown2.TabIndex = 1;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            128,
+            0,
+            0,
+            0});
             // 
             // numericUpDown3
             // 
             this.numericUpDown3.Location = new System.Drawing.Point(223, 12);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(85, 31);
             this.numericUpDown3.TabIndex = 2;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            128,
+            0,
+            0,
+            0});
             // 
             // numericUpDown4
             // 
             this.numericUpDown4.Location = new System.Drawing.Point(223, 81);
+            this.numericUpDown4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(85, 31);
             this.numericUpDown4.TabIndex = 3;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
