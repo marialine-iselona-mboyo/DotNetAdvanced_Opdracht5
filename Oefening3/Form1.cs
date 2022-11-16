@@ -4,7 +4,7 @@ namespace Oefening3
     {
 
         private int x = 0;
-        private int y = 25;
+        private int y = 20;
         private int breedte = 0;
         private int hoogte = 0;
 
@@ -45,8 +45,8 @@ namespace Oefening3
             rijTeller = 0;
             colTeller = 0;
             for (int i = 0; i < teller; i++) { 
-                colorAlphaList.Add(35);
-                colorRedList.Add(255);
+                colorAlphaList.Add(255);
+                colorRedList.Add(250);
                 colorGreenList.Add(128);
                 colorBlueList.Add(128);
 
@@ -55,7 +55,7 @@ namespace Oefening3
                 rechthoek.Multiline = true;
                 rechthoek.Location = new Point(x, y);
                 rechthoek.Size = new Size(breedte, hoogte);
-                rechthoek.BackColor = Color.FromArgb(colorAlphaList[i], colorBlueList[i], colorGreenList[i], colorRedList[i]);
+                rechthoek.BackColor = Color.FromArgb(colorBlueList[i], colorGreenList[i], colorRedList[i]);
                 this.Controls.Add(rechthoek);
                 textBoxesList.Add(rechthoek);
             }
@@ -77,7 +77,7 @@ namespace Oefening3
                 rechthoek.Multiline = true;
                 rechthoek.Location = new Point(x, y);
                 rechthoek.Size = new Size(breedte, hoogte);
-                rechthoek.BackColor = Color.FromArgb(colorAlphaList[i], colorBlueList[i], colorGreenList[i], colorRedList[i]);
+                rechthoek.BackColor = Color.FromArgb(colorBlueList[i], colorGreenList[i], colorRedList[i]);
                 this.Controls.Add(rechthoek);
                 textBoxesList.Add(rechthoek);
             }
@@ -135,10 +135,25 @@ namespace Oefening3
                 rechthoek.Multiline = true;
                 rechthoek.Location = new Point(x, y);
                 rechthoek.Size = new Size(breedte, hoogte);
-                rechthoek.BackColor = Color.FromArgb(colorAlphaList[j], colorBlueList[j], colorGreenList[j], colorRedList[j]);
+                rechthoek.BackColor = Color.FromArgb(colorBlueList[j], colorGreenList[j], colorRedList[j]);
                 this.Controls.Add(rechthoek);
                 textBoxesList.Add(rechthoek);
             }
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+            //if(kleur != null)
+            //{
+            //    kleur.Visible = false;
+            //}
+
+            ////textBoxes = (TextBox)sender;
+            ////Kleur kleuren = new Kleur();
+            //kleuren.Visible = true;
+            //kleuren.Location = new Point(textBoxes.Location.X, textBoxes.Location.Y);
+            //kleur = kleuren;
+            //textBox = textBoxesList.IndexOf(textBoxes) + 1;
         }
     }
 }
