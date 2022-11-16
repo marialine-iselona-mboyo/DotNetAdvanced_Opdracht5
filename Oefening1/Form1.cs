@@ -21,28 +21,30 @@ namespace Oefening1
 
 
 
+        //FONT COLOR
         private void redCtrlRToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Red;
-            InputText.BackColor = Color.Red;
+
         }
 
         private void greenCtrlGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Green;
-            InputText.BackColor = Color.Green;
+
         }
 
         private void blueCtrlBToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.ForeColor = Color.Blue;
-            InputText.BackColor = Color.Blue;
+
         }
 
 
 
 
 
+        //FONT SIZE
         private void smallCtrlSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InputText.Font = Font = new Font(InputText.Font.Name, 6,
@@ -65,6 +67,20 @@ namespace Oefening1
 
 
 
+        //BACKGROUND COLOR
+        private void redToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InputText.BackColor = Color.Red;
+        }
 
+        private void greenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InputText.BackColor = Color.Green;
+        }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InputText.BackColor = Color.Blue;
+        }
     }
 }

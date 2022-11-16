@@ -25,12 +25,27 @@ namespace Oefening2
             DialoogVenster dialogWindow = new DialoogVenster();
             dialogWindow.ShowDialog();
 
-            if (dialogWindow.DialogResult == DialogResult.OK)
+            double number = dialogWindow.number;
+            bool noNumber = dialogWindow.noNumber;
+
+            if (noNumber == false)
             {
-                ToevoegenLijst(dialogWindow.number);
-                berekenGemiddelde();
-                dialogWindow.Dispose();
+                ListBoxGem.Items.Add(number);
+ 
             }
+
+            int listGem = ListBoxGem.Items.Count;
+            double total = 0;
+
+            for (int i = 0; i < listGem; i++)
+            {
+                total += Convert.ToDouble(ListBoxGem.Items[i]);
+            }
+
+            total = (total / listGem);
+
+
+            GemiddeldeTB.Text = total.ToString();
         }
 
 
@@ -38,23 +53,6 @@ namespace Oefening2
         public void ToevoegenLijst(double number)
         {
             ListBoxGem.Items.Add(number);
-        }
-
-
-        public void berekenGemiddelde()
-        {
-            double total = 0;
-
-
-            for (int i = 0; i < ListBoxGem.Items.Count; i++)
-            {
-                total = total + double.Parse(ListBoxGem.Items[i].ToString());
-            }
-
-            total = (total / ListBoxGem.Items.Count);
-
-
-            GemiddeldeTB.Text = total.ToString();
         }
     }
 }
